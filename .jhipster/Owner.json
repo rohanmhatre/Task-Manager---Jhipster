@@ -1,0 +1,25 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "task",
+            "otherEntityName": "task",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "owner"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "email",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20160416064341",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "owner",
+    "pagination": "pager"
+}

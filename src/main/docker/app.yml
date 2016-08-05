@@ -1,0 +1,21 @@
+version: '2'
+services:
+    filmsolutions-app:
+        image: filmsolutions
+        external_links:
+            - filmsolutions-mysql:mysql
+            - filmsolutions-elasticsearch:elasticsearch
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod
+            - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/filmsolutions?useUnicode=true&characterEncoding=utf8&useSSL=false
+            - SPRING_DATA_ELASTICSEARCH_CLUSTER_NODES=elasticsearch:9300
+        ports:
+            - 8080:8080
+    filmsolutions-mysql:
+        extends:
+            file: mysql.yml
+            service: filmsolutions-mysql
+    filmsolutions-elasticsearch:
+        extends:
+            file: elasticsearch.yml
+            service: filmsolutions-elasticsearch

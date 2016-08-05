@@ -1,0 +1,10 @@
+version: '2'
+services:
+    filmsolutions-elasticsearch:
+        container_name: filmsolutions-elasticsearch
+        image: elasticsearch:1.7.5
+        # volumes:
+        #     - ~/volumes/jhipster/FilmSolutions/elasticsearch/:/usr/share/elasticsearch/data/
+        ports:
+            - 9200:9200
+            - 9300:9300

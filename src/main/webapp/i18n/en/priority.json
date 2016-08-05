@@ -1,0 +1,12 @@
+{
+    "filmSolutionsApp": {
+        "Priority" : {
+            "null": "",
+            "HIGHEST": "HIGHEST",
+            "HIGH": "HIGH",
+            "NORMAL": "NORMAL",
+            "LOW": "LOW",
+            "LOWEST": "LOWEST"
+        }
+    }
+}

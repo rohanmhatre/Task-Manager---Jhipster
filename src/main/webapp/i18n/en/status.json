@@ -1,0 +1,11 @@
+{
+    "filmSolutionsApp": {
+        "Status" : {
+            "null": "",
+            "SCHEDULED": "SCHEDULED",
+            "STARTED": "STARTED",
+            "COMPLETED": "COMPLETED",
+            "ON_HOLD": "ON_HOLD"
+        }
+    }
+}

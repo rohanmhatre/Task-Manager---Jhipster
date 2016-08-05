@@ -1,0 +1,19 @@
+{
+    "home": {
+        "title": "Film Solutions,LLC.",
+        "subtitle": "This is your homepage",
+        "logged": {
+            "message": "You are logged in as user \"{{username}}\"."
+        },
+        "question": "If you have any question on Film Solutions:",
+        "link": {
+            "homepage": "Film Solutions Home-Page",
+            "stackoverflow": "Work",
+            "bugtracker": "Services",
+            "chat": "Team",
+            "follow": "Clients"
+        },
+        "like": "If you like JHipster, don't forget to give us a star on",
+        "github": "GitHub"
+    }
+}

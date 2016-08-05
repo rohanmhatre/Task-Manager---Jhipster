@@ -1,0 +1,48 @@
+
+<div>
+    <h2><span translate="filmSolutionsApp.task.detail.title">Task</span> {{vm.task.id}}</h2>
+    <hr>
+    <dl class="dl-horizontal">
+        <dt><span translate="filmSolutionsApp.task.name">Name</dt></dt>
+        <dd>
+            <span>{{vm.task.name}}<span>
+        </dd>
+        <hr>
+        <dt><span translate="filmSolutionsApp.task.description">Description</dt></dt>
+        <dd>
+            <span>{{vm.task.description}}<span>
+        </dd>
+        <hr>
+        <dt><span translate="filmSolutionsApp.task.date_assigned">Date_assigned</dt></dt>
+        <dd>
+            <span>{{vm.task.date_assigned | date:'medium'}}</span>
+        </dd>
+        <hr>
+        <dt><span translate="filmSolutionsApp.task.date_completion">Date_completion</dt></dt>
+        <dd>
+            <span>{{vm.task.date_completion | date:'medium'}}</span>
+        </dd>
+        <hr>
+        <dt><span translate="filmSolutionsApp.task.status">Status</dt></dt>
+        <dd>
+            <span translate="{{'filmSolutionsApp.Status.' + vm.task.status}}">{{vm.task.status}}</span>
+        </dd>
+        <hr>
+        <dt><span translate="filmSolutionsApp.task.priority">Priority</dt></dt>
+        <dd>
+            <span translate="{{'filmSolutionsApp.Priority.' + vm.task.priority}}">{{vm.task.priority}}</span>
+        </dd>
+        <hr>
+        <dt><span translate="filmSolutionsApp.task.owner">owner</span></dt>
+        <dd>
+            <a ui-sref="owner-detail({id:vm.task.owner.id})">{{vm.task.owner.name}}</a>
+        </dd>
+        <hr>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

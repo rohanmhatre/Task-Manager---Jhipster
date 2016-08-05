@@ -1,0 +1,43 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "owner",
+            "otherEntityName": "owner",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "name"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "date_assigned",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "date_completion",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "Status",
+            "fieldValues": "SCHEDULED,STARTED,COMPLETED,ON_HOLD"
+        },
+        {
+            "fieldName": "priority",
+            "fieldType": "Priority",
+            "fieldValues": "HIGHEST,HIGH,NORMAL,LOW,LOWEST"
+        }
+    ],
+    "changelogDate": "20160416070820",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "task",
+    "pagination": "pager"
+}
